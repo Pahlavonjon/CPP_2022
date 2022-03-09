@@ -12,7 +12,7 @@ using namespace std;
         array_multiplier = array_log[k];
     }
     //cout << "\n The log array is: \n";
-    cout << "\n\n";
+    //cout << "\n\n";
     int number = 0;
     for (int k = number_of_digits-1; k > -1; k--){
         if (k == number_of_digits-1 && binary_digits[number_of_digits-1] == 1){
