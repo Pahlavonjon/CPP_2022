@@ -23,7 +23,7 @@ void print_as_binary(string decimal_number){
     //cout <<"\n The number is: "<<length_array<<" bits long\n";
     //cout<< "\n\n The binary number is: \n";
     for (int k = (30-length_array); k < 30; k++){
-        cout<<" "<<array_binary[k];
+        cout<<array_binary[k];
     }
     cout<<endl;
 }
