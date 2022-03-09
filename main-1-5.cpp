@@ -8,17 +8,15 @@ int main(){
     int array_A[3][3];
     int array_B[3][3];
     cout <<"\n Enter integers for the first array: \n";
-    for (int k = 0; k < 4; k++){
-        for (int j = 0; j < 4; j++){
+    for (int k = 0; k < 3; k++){
+        for (int j = 0; j < 3; j++){
             cout << " Enter integer: ";
             cin >> array_A[k][j];
         }
     }
     cout <<"\n Enter integers for the second array: \n";
-    int array_A[array_dimention][array_dimention];
-    int array_B[array_dimention][array_dimention];
-    for (int k = 0; k < 4; k++){
-        for (int j = 0; j < 4; j++){
+    for (int k = 0; k < 3; k++){
+        for (int j = 0; j < 3; j++){
             cout << " Enter integer: ";
             cin >> array_B[k][j];
         }

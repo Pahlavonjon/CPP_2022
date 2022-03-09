@@ -8,8 +8,8 @@ void print_scaled_matrix(int array[3][3], int scale){
             array[k][j] = (array[k][j])*(scale);
         }
     }
-    for (int k = 0; k < array_length; k++){
-        for (int j = 0; j < array_length; j++){
+    for (int k = 0; k < 3; k++){
+        for (int j = 0; j < 3; j++){
             cout << array[k][j]<<" ";
         }
         cout <<"\n";

@@ -10,7 +10,6 @@ int diagonal(int array[4][4]){
                 diagonal_summation += array[k][j];
             }
         }
-        cout << "\n";
     }
     return diagonal_summation;
 }

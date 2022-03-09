@@ -11,7 +11,7 @@ using namespace std;
         array_log[k] = (array_multiplier)*(2);
         array_multiplier = array_log[k];
     }
-    cout << "\n The log array is: \n";
+    //cout << "\n The log array is: \n";
     for (int k = 1; k < number_of_digits; k++){
         cout <<" "<<array_log[k];
     }

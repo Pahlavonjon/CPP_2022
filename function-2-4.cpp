@@ -1,4 +1,5 @@
 #include <iostream>
+#include <array>
 
 using namespace std;
 
@@ -34,8 +35,6 @@ int min_integer(int integers[], int length){
 
 int sum_min_and_max(int integers[], int length){
     int sum_of_min_and_max = 0;
-    for (int k = 0; k < length; k++){
-        sum_of_min_and_max += integers[k];
-    }
+    sum_of_min_and_max = max_integer(integers,length) + min_integer(integers,length);
     return sum_of_min_and_max;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <array>
 
 using namespace std;
 
@@ -7,18 +8,15 @@ extern int min_integer(int integers[], int length);
 extern int sum_min_and_max(int integers[], int length);
 
 int main(){
-    int array_length = 0;
-    int array_min_max[2];
     int total = 0;
+    int array_length = 0;
     cout << "\n Enter array length: ";
     cin >> array_length;
-    int array[array_length];
+    int Array[array_length];
     for (int k = 0; k < array_length; k++){
         cout << "\n Enter integer: ";
-        cin >> array[k];
+        cin >> Array[k];
     }
-    array_min_max[0] = max_integer(array,array_length);
-    array_min_max[1] = min_integer(array,array_length);
-    total = sum_min_and_max(array_min_max,2);
+    total = sum_min_and_max(Array,array_length);
     cout << "\n The total is: "<<total<<"\n\n";
 }

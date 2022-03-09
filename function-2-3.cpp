@@ -3,11 +3,16 @@
 using namespace std;
 
 int sum_elements(int integers[], int length){
+    if (length < 1){
+        return -1;
+    }
+    else {
     int sum = 0;
     for (int k = 0; k < length; k++){
-        sum +=integers[k];
+        sum += integers[k];
     }
     return sum;
+    }
 }
 
 bool is_a_palindrome(int array[],int n){
@@ -69,7 +74,7 @@ int sum_if_a_palindrome(int integers[], int length){
     int palindrome = 0;
     int sum_array_elements = 0;
     palindrome = is_a_palindrome(integers,length);
-    cout <<"\n The palidrome value is: "<<palindrome<<"\n\n";
+    //cout <<"\n The palidrome value is: "<<palindrome<<"\n\n";
     if (palindrome != 0 && palindrome == 1){
         sum_array_elements = sum_elements(integers,length);
         return sum_array_elements;

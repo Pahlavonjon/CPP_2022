@@ -7,13 +7,11 @@ int identity(int array[10][10]){
     int zeros = 0;
     for (int k = 0; k < 10; k++){
         for (int j = 0; j < 10; j++){
-            if (k == j){
+            if (k == j && array[k][j] == 1){
                 diagonal_summation++;
             }
-            else if (k != j){
-                if (array[k][j] == 0){
-                    zeros++;
-                }
+            else if (k != j && array[k][j] == 0){
+                zeros++;
             }
         }
         cout << "\n";
