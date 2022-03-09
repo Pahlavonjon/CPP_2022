@@ -11,7 +11,12 @@ extern void print_summed_matrices(int array1[3][3], int array2[3][3]){
     }
     for (int k = 0; k < 3; k++){
         for (int j = 0; j < 3; j++){
+            if (j == 2){
+                cout <<arrays_sum[k][j];
+            }
+            else{
             cout << arrays_sum[k][j]<<" ";
+            }
         }
         cout <<endl;
     }
