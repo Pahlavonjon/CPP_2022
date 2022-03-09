@@ -1,15 +1,16 @@
 #include <iostream>
 #include <string>
+#include <random>
 
 using namespace std;
 
-int main(){
+void random_binary(){
+    for (int g = 0; g < 30; g++){
     int number = 0;
-    cout <<"\n Enter a number: \n";
-    cin >> number;
+    number = rand();
     int binary_length = 0;
-    int binary[16];
-    for (int j = 15; j > -1; j--){
+    int binary[30];
+    for (int j = 29; j > -1; j--){
         if (number%2 == 0 && number != 0){
             binary[j] = 0;
             number = number*0.5;
@@ -21,9 +22,16 @@ int main(){
             binary_length++;
         }
     }
-    cout <<"\n The binary number is: \n";
-    for (int k = (16 - binary_length); k < 16; k++){
-        cout <<" "<< binary[k];
+    cout <<"\n The binary numbers is: \n";
+    
+        for (int k = (30 - binary_length); k < 30; k++){
+            cout <<" "<< binary[k];
+        }
+    cout<<"\n";
     }
     cout<<"\n\n";
+}
+
+int main(){
+    random_binary();
 }
