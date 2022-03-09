@@ -14,7 +14,6 @@ int identity(int array[10][10]){
                 zeros++;
             }
         }
-        cout << "\n";
     }
     if (diagonal_summation == 10 && zeros == 90){
         return 1;

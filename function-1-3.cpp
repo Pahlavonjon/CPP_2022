@@ -49,5 +49,5 @@ void count_numbers(int array[4][4]){
             }
         }
     }
-    cout <<"0:"<<zero_count<<";1:"<<one_count<<";2:"<<two_count<<";3:"<<three_count<<";4:"<<four_count<<";5:"<<five_count<<";6:"<<six_count<<";7:"<<seven_count<<";8:"<<eight_count<<";9:"<<nine_count<<";\n";
+    cout <<"0:"<<zero_count<<";1:"<<one_count<<";2:"<<two_count<<";3:"<<three_count<<";4:"<<four_count<<";5:"<<five_count<<";6:"<<six_count<<";7:"<<seven_count<<";8:"<<eight_count<<";9:"<<nine_count<<";"<<endl;
 }

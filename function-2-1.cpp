@@ -25,5 +25,5 @@ void print_as_binary(string decimal_number){
     for (int k = (30-length_array); k < 30; k++){
         cout<<" "<<array_binary[k];
     }
-    cout<<"\n";
+    //cout<<"\n";
 }
