@@ -46,7 +46,7 @@ bool is_a_palindrome(int array[],int n){
     int array_check = 0;
     bool Fan_Array = false;
     int array_decrementor = (n)-1;
-    for (int f = 0; f < array_midpoint; f++){ 
+    for (int f = 0; f < array_midpoint; f++;){ 
         if (array[array_decrementor] == array[f]){
             array_decrementor--;
             array_check++;
