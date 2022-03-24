@@ -14,7 +14,6 @@ using namespace std;
 
 
 
-    int largest = *(sub_array_addition);
 
     // int sub_array_length_current = 0;
     int sub_array_length = 0;
@@ -32,13 +31,10 @@ using namespace std;
         }
     }
     for (int t = 0; t < length; t++){
-        if (length == 1){
-            largest = *(nums+0);
-            return largest;
-        }
         int incrementor = 0;
         for (int h = t; h < length; h++){
              int addition_first = 0;
+            cout <<"\n";
             if (t == 0){
                 for (int g = t; g < (length-1-incrementor); g++){
 
@@ -48,11 +44,13 @@ using namespace std;
 
                     // sub_array_length_curret++;
 
+                    cout <<*(nums+g)<<" ";
                     array_inc++;
                 }
                 *(sub_array_addition+addition_inc) = addition_first;
                 addition_inc++;
                 incrementor++;
+                cout <<"\n";
         }
         else {
              int addition_second = 0;
@@ -64,17 +62,21 @@ using namespace std;
 
                 sub_array_length++;
 
+                cout <<*(nums+g)<<" ";
                 array_inc++;
             }
             *(sub_array_addition+addition_inc) = addition_second;
             addition_inc++;
             incrementor++;
+            cout <<"\n";
         }
         }
     }
 
-
+    cout <<"\n";
+    int largest = *(sub_array_addition);
     for (int h = 0; h < length*length; h++){
+        cout <<*(sub_array_addition+h) <<" ";
         if (largest < *(sub_array_addition+h))
         largest = *(sub_array_addition+h);
     }

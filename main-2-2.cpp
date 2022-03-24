@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -11,6 +10,9 @@ int main(){
     int sub_array_addition = 0;
     cout <<"\n Enter array_length: ";
     cin >> array_length;
+    if (array_length < 0){
+        return 0;
+    }
     int *array = new int[array_length];
     for (int h = 0; h < array_length; h++){
         cout<<"\n Enter a number: ";
