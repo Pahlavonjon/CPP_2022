@@ -1,9 +1,14 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 using namespace std;
 
  int maximum_sum(int *nums,int length){
+
+    if (length < 1){
+        return 0;
+    }
 
     //int *sub_array_addition = new int[length*length*length];
     int *sub_array_copy = new int[length*length*length];
@@ -18,9 +23,7 @@ using namespace std;
 
     // int sub_array_length_current = 0;
     int sub_array_length = 0;
-    if (length < 1){
-        return 0;
-    }
+
     int addition_inc = 0;
     int negative_count = 0;
     for (int k = 0; k < length; k++){
