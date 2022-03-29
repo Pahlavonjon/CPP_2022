@@ -3,17 +3,18 @@
 
 using namespace std;
 
-extern void print_sevens(int *nums,int length);
+extern void hexDigits(int *numbers,int length);
 
 int main(){
     int array_length = 0;
-    cout <<"\n Enter array_length: ";
+    cout <<"\n Enter array length: ";
     cin >> array_length;
-    int *array = new int[array_length];
-    for (int h = 0; h < array_length; h++){
-        cout<<"\n Enter a number: ";
-        cin >> array[h];
+    int *array = new int [array_length];
+    for (int k = 0; k < array_length; k++){
+        cout <<"\n Enter number: ";
+        cin >> *(array+k);
     }
-    print_sevens(array,array_length);
+    hexDigits(array,array_length);
+    delete array;
 
 }
