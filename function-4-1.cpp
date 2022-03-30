@@ -14,7 +14,6 @@ int* min_max(int **vals,int num_rows, int num_cols){
             }
         }
     }
-    cout <<"\n smallest is "<<array_new[0]<<"\n";
     for (int k = 0; k < num_rows; k++){
         for (int j = 0; j < num_cols; j++){
             if (largest < *(*(vals+k)+j)){
