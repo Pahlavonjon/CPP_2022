@@ -3,17 +3,12 @@
 
 using namespace std;
 
-extern void print_sevens(int *nums,int length);
+extern string lookup_month(int month);
 
 int main(){
     int array_length = 0;
-    cout <<"\n Enter array_length: ";
+    cout <<"\n Enter a number from 1-12 inclusive: ";
     cin >> array_length;
-    int *array = new int[array_length];
-    for (int h = 0; h < array_length; h++){
-        cout<<"\n Enter a number: ";
-        cin >> array[h];
-    }
-    print_sevens(array,array_length);
-
+    
+    cout << lookup_month(array_length) <<"\n";
 }
