@@ -22,11 +22,6 @@ int main(){
             cin >> *(*(arrayS+k)+j);
         }
     }
-    for (int k = 0; k < array_length_1; k++){
-        for (int j = 0; j < array_length_2; j++){
-            cout <<"     "<<(*(*(arrayS+k)+j));
-        }
-    }
     int *array_3; 
     array_3 = min_max(arrayS,array_length_1,array_length_2);
     cout <<"\n The result is: \n";

@@ -12,4 +12,5 @@ void print_until_down(int *vals, int len){
             cout << *(vals+k)<<" ";
         }
     }
+    cout <<"\n";
 }
