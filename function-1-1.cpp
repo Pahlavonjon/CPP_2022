@@ -8,7 +8,7 @@ void print_until_down(int *vals, int len){
         if (k == 0){
             cout << *(vals+k)<<" ";
         }
-        else if (*(vals+k) < *(vals+k-1)){
+        else if (*(vals+k) > *(vals+k-1)){
             if (k == len-1){
                 cout << *(vals+k);
             }
@@ -17,5 +17,5 @@ void print_until_down(int *vals, int len){
             }
         }
     }
-    cout <<"\n";
+    cout <<endl;
 }
