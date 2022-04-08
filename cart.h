@@ -11,7 +11,6 @@ class cart{
         int Cart_capacity_current;
         int number_objects_in_the_cart;
         meerkat *Cart_Storage;
-        int Cart_inc;
     public:
         cart();
         bool addMeerkat(meerkat cat);   // adds a meerkat to the cart, returns false if full

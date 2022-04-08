@@ -35,6 +35,6 @@ aircraft::aircraft(string callsign,person thePilot,person theCoPilot){
     }
     
     void aircraft::printDetails(){
-        cout <<Callsign<<"\n"<<Aircraft[0].getName();
-        cout <<"\n"<<Aircraft[1].getName()<<"\n";
+        cout <<Callsign<<endl<<Aircraft[0].getName();
+        cout <<endl<<Aircraft[1].getName()<<endl;
     } 

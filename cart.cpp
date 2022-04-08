@@ -6,17 +6,17 @@
 using namespace std;
 
     cart::cart(){
-        Cart_capacity_current = 4;
+        Cart_capacity_current = Cart_capacity;
         number_objects_in_the_cart = 0;
-        Cart_inc = 0;
         Cart_Storage = new meerkat[Cart_capacity];
     };
 
     bool cart::addMeerkat(meerkat cat){
 
         if (Cart_capacity_current != 0){
-            Cart_Storage[Cart_inc] = cat;
-            Cart_inc++;
+            int cart_index = number_objects_in_the_cart;
+            Cart_Storage[cart_index] = cat;
+            cart_index++;
             number_objects_in_the_cart++;
             Cart_capacity_current--;
             return true;
@@ -46,7 +46,7 @@ using namespace std;
     }               // remove all meerkats from the cart
     void cart::printMeerkats(){
         for (int k = 0; k < Cart_capacity; k++){
-            cout <<Cart_Storage[k].getName()<<" "<<Cart_Storage[k].getAge()<<"\n";
+            cout <<Cart_Storage[k].getName()<<" "<<Cart_Storage[k].getAge()<<endl;
         }
     }           // print the name, a space, the age, then a new line
  // print the name, a space, the age, then a new line
