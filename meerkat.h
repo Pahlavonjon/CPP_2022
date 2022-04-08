@@ -7,8 +7,8 @@ using namespace std;
 
 class meerkat{
     private:
-        string Name;
-        int Age;
+        string Name = "";
+        int Age = 0;
     public:                      // no name or age is required to create a meerkat
         void setName(string meerName);   // change the meerkat's name
         string getName();

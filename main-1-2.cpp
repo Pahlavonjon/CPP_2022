@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(){
-    person Max("Max",90000), Vincent("Vincent",80000), John("John",60000), Richard("Richard", 120000);
+    person Max("",9), Vincent("",8), John("",6), Richard("", 12);
     Max.setName("Max");
     cout <<"\n "<<Max.getName();
     Max.setSalary(90000);

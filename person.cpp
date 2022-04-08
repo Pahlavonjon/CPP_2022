@@ -3,6 +3,10 @@
 
 using namespace std;
 
+person::person(){
+    
+}
+
 person::person(string myName,int Salary){
     Name = myName;
     salary = Salary;

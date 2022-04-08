@@ -7,9 +7,10 @@ using namespace std;
 
 class person{
     private:
-        string Name;
-        int salary;
+        string Name = "";
+        int salary = 0;
     public:
+        person();
         person(string myName,int Salary); // a name and salary must be provided to create a person
         void setName(string myName);      // change the person's name
         string getName();
