@@ -7,7 +7,7 @@ using namespace std;
 
 class cart{
     private:
-        int Cart_capacity;
+        static const int Cart_capacity = 4;
         int Cart_capacity_current;
         int number_objects_in_the_cart;
         meerkat *Cart_Storage;

@@ -6,7 +6,6 @@
 using namespace std;
 
     cart::cart(){
-        Cart_capacity = 4;
         Cart_capacity_current = 4;
         number_objects_in_the_cart = 0;
         Cart_inc = 0;
@@ -50,3 +49,5 @@ using namespace std;
             cout <<Cart_Storage[k].getName()<<" "<<Cart_Storage[k].getAge()<<"\n";
         }
     }           // print the name, a space, the age, then a new line
+ // print the name, a space, the age, then a new line
+                                // for each meerkat in the order they were added

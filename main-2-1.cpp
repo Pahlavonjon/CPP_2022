@@ -24,18 +24,17 @@ int main(){
     M5.setName("Meerkat_5");
     M5.setAge(20);
 
-    while (added == true){
     added = Meerkat_Cart.addMeerkat(M1);
     added = Meerkat_Cart.addMeerkat(M2);
     added = Meerkat_Cart.addMeerkat(M3);
     added = Meerkat_Cart.addMeerkat(M4);
     added = Meerkat_Cart.addMeerkat(M5);
-    }
+
     if (added == false){
-        cout <<"\n Cannot ADD!!!\n\n";
+        cout <<"\n Cart full cannot add!!!\n\n";
     }
 
-    Meerkat_Cart.printMeerkats();
+    // Meerkat_Cart.printMeerkats();
 
     Meerkat_Cart.emptyCart();
 }
