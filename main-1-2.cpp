@@ -10,9 +10,11 @@ int main(){
     Musician John("Piano",3);
     Musician Rex("Saxaphone",6);
     Musician Ben("Clarronnet",8);
-    Sydney_Opera_Orchestra.add_musician(John);
-    Sydney_Opera_Orchestra.add_musician(Rex);
-    Sydney_Opera_Orchestra.add_musician(Ben);
+    Musician Gary("Flute",2);
+    cout <<" "<<Sydney_Opera_Orchestra.add_musician(John);
+    cout <<" "<<Sydney_Opera_Orchestra.add_musician(Rex);
+    cout <<" "<<Sydney_Opera_Orchestra.add_musician(Ben);
+    cout <<" "<<Sydney_Opera_Orchestra.add_musician(Gary);
     Musician *ALL_Musicians = Sydney_Opera_Orchestra.get_members();
     cout <<"\n\n The Orchestra is: \n\n";
     for (int k = 0; k < 3; k++){

@@ -10,7 +10,7 @@ using namespace std;
     }       
     Orchestra::Orchestra(int size){
         Orchestra_Max_Size = size;
-        Musicians_in_the_Orchestra = new Musician[Orchestra_Max_Size];
+        Musicians_in_the_Orchestra = new Musician[size];
         Current_Orchestra_Size = 0;
         Musician_index = 0;
     }  
@@ -36,7 +36,7 @@ using namespace std;
     }   
 
     bool Orchestra::add_musician(Musician new_musician){
-        if (Current_Orchestra_Size < Orchestra_Max_Size+1){
+        if (Current_Orchestra_Size < Orchestra_Max_Size){
             Musicians_in_the_Orchestra[Musician_index] = new_musician;
             Current_Orchestra_Size++;
             Musician_index++;
