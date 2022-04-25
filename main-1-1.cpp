@@ -1,21 +1,10 @@
 #include <iostream>
 #include <string>
+#include "Musician.h"
 
 using namespace std;
 
-extern void copy_2d_strings(string first[][2], string second[][2], int n);
-
 int main(){
-    string array[3][2] = {""};
-    cout <<"\n";
-    for (int h = 0; h < 3; h++){
-        for (int g = 0; g < 2; g++){
-            cout <<"\n Enter: ";
-            cin >> array[h][g];
-        }
-    }
-    string array_copy[3][2];
-    copy_2d_strings(array,array_copy,3);
-
-
+    Musician Odilov("Piano",3);
+    cout <<"\n\n Musician plays "<<Odilov.get_instrument()<<" and has a "<<Odilov.get_experience()<<" year experience\n\n";
 }
