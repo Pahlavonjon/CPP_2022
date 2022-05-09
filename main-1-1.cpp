@@ -1,11 +1,15 @@
 #include <iostream>
 #include <string>
-#include "Music_box.h"
 using namespace std;
-
+int add(int lhs, int rhs) {
+    return lhs + rhs;
+}
 int main(){
-    Music_box Box_1("Song1",40);
-    cout<<" "<<Box_1.get_song()<<"\n\n";
-    cout<<" "<<Box_1.get_width()<<"\n\n";
-
+    for (int f = 1; f < 101; f++){
+        for (int g = 1; g < 101; g++){
+            if (add(f, g) != (f+g)) {
+                cout << "Test "<<f<<" "<<g<<" failed!" <<"\n\n";
+            }
+        }
+    }
 }
