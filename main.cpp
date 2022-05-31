@@ -28,7 +28,7 @@ int main(void){
     cout << "\n The id of cow is: "<<cow->get_animalID()<<"\n\n";
 
     sort_by_animalID Sort_IDs;
-    Sort_IDs.sort(my_zoo.get_animals(),my_zoo.get_number_of_animals());
+    Sort_IDs.sort(my_zoo.get_animals(),0); // my_zoo.get_number_of_animals()
     cout << "\n\n Sorted by IDs:\n\n";
 
     for (int k = 0; k < 2; k++){
@@ -44,5 +44,11 @@ int main(void){
         cout << " The name  "<<total_animals[k]->get_name()<<" and the volume of this animal is: "<<total_animals[k]->get_name()<<"\n\n";
     }
     cout << "\n\n";
+
+    cout << "\n\n\n The animals in the zoo is \n\n\n\n";
+    for (int k = 0; k < 2; k++){
+        cout << " The name of the animal is: "<<total_animals[k]->get_name()<<" and the volume of this animal is: "<<total_animals[k]->get_volume()<<"\n\n";
+    }
+    
     return 0;
 }
