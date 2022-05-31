@@ -15,4 +15,7 @@ using namespace std;
             return this->volume;
         }
         animal::~animal(){}
+        void animal::set_name(string new_name){
+            this->name = new_name;
+        }
 
