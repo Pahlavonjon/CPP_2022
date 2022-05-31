@@ -1,17 +1,17 @@
 #include <iostream>
 #include <string>
 #include "animal.h"
-#include "hunter.h"
+#include "vegie.h"
 using namespace std;
-
-        vegie::vegie(string n,int v){
-            this->name = n;
-            this->volume = v;
+        int vegie::nextID = 100;
+        vegie::vegie(string n,int v):animal::animal(n,v){
             this->favourite_food = "grass";
-            this->nextID = 100;
+            animalID = nextID;
+            vegie::nextID++;
         }     
         string vegie::get_name(){
-            return "Safe: "+name;
+            string new_name = "Safe: "+this->name;
+            return new_name;
         } 
         void vegie::set_name(string new_name){
             this->name = new_name;

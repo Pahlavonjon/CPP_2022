@@ -1,21 +1,20 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include "animal.h"
+#include "sort_by_name.h"
 using namespace std;
 
-class sort_by_name{
-    public:
-        sort_by_name(){}
-        static void sort(animal **animals,int n){
-            animal* temporary_animal;
-            for (int k = 0; k < lenth(animals); k++){
-                for (int j = k+1; k < length(animals); j++){
-                    if (animals[j]->get_name() < animals[k]->get_name()){
-                        temporary_animal = animals[k];
-                        animals[k] = animals[j];
-                        animals[j] = temporary_animal;
-                    }
+        sort_by_name::sort_by_name(){}
+   
+        void sort_by_name::sort(animal **animals,int n){
+            for (int k = 0; k < n-1; k++){
+                if (((animals[k]->get_name())) < ((animals[k+1]->get_name()))){
+                    animal* temporary_animal_bigger = (animals[k]);
+                    animal* temporary_animal_smaller = (animals[k+1]);
+                    animals[k+1] = temporary_animal_bigger;
+                    animals[k] = temporary_animal_smaller;
                 }
             }
-        }	// sorts the array of n animals into ascending order using their names
-};
+        }
+        

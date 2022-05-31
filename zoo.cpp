@@ -6,9 +6,18 @@ using namespace std;
         zoo::zoo(string n,int cows,int lions){
             number_of_animals = cows+lions;
             this->animals = new animal*[number_of_animals];
-            animals[0] = new vegie("Daisy",100);
-            animals[1] = new hunter("Clarence",50)
+            this->animals_index = 0;
+            // animals[0] = new vegie("Daisy",100);
+            // animals[1] = new hunter("Clarence",50);
         }     
+        bool zoo::add_animal(animal* this_animal){
+            if (animals_index <= number_of_animals){
+                animals[animals_index] = this_animal;
+                animals_index++;
+                return true;
+            }
+            return false;
+        }
         string zoo::get_name(){
             return this->name;
         }

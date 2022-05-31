@@ -1,11 +1,11 @@
 #ifndef hunter_H
-#define hunter_H;
+#define hunter_H
 #include <iostream>
 #include <string>
 #include "animal.h"
 using namespace std;
 
-class hunter : protected animal{
+class hunter : public animal{
     private:
         int kills;
         static int nextID;

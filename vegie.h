@@ -4,7 +4,7 @@
 #include <string>
 #include "animal.h"
 using namespace std;
-class vegie : protected animal{
+class vegie : public animal{
     private:
         static int nextID ;
     public:
@@ -12,6 +12,5 @@ class vegie : protected animal{
         string favourite_food ;     // the vegie's favourite food, initialise to "grass"
         string get_name();
         void set_name(string new_name);
-
 };
 #endif

@@ -1,3 +1,3 @@
 compile:
-	g++ -pthread main.cpp Client_Account.cpp Savings_Account.cpp Term_Account.cpp Bank.cpp -o Bank_System
-	./Bank_System
+	g++ main.cpp animal.cpp hunter.cpp vegie.cpp zoo.cpp sort_by_animalID.cpp sort_by_name.cpp -o w12
+	./w12

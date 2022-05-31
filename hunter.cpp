@@ -3,12 +3,11 @@
 #include "animal.h"
 #include "hunter.h"
 using namespace std;
-
-        hunter::hunter(string n, int v){
-            this->name = n;
-            this->volume = v;
+        int hunter::nextID = 1000;
+        hunter::hunter(string n, int v):animal::animal(n,v){
             this->kills = 0;
-            this->nextID = 1000;
+            animalID = nextID;
+            hunter::nextID++;
         }
         int hunter::get_kills(){
             return this->kills;
@@ -17,5 +16,6 @@ using namespace std;
             this->kills = new_kills;
         }
         string hunter::get_name(){
-            return "Hunter: "+name;
+            string new_name = "Hunter: "+this->name;
+            return new_name;
         }

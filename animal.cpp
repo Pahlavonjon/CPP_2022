@@ -2,16 +2,16 @@
 #include <string>
 #include "animal.h"
 using namespace std;
-        animal::animal(){}
+   
         animal::animal(string n, int v){
             this->name = n; 
             this->volume = v; 
-            this->animalID = rand()%53483 + 39847547;
+            this->animalID = 0;
         }
-        animal::int get_animalID(){
+        int animal::get_animalID(){
             return this->animalID;
         }
-        animal::int get_volume(){
+        int animal::get_volume(){
             return this->volume;
         }
         animal::~animal(){}
