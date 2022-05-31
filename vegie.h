@@ -12,5 +12,6 @@ class vegie : public animal{
         string favourite_food ;     // the vegie's favourite food, initialise to "grass"
         string get_name();
         void set_name(string new_name);
+        string get_favourite_food();
 };
 #endif
