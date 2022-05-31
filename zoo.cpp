@@ -4,7 +4,10 @@
 using namespace std;
 
         zoo::zoo(string n,int cows,int lions){
-            number_of_animals = cows+lions;
+            number_of_animals = abs(cows)+abs(lions);
+            if (number_of_animals < 1){
+                number_of_animals = 1;
+            }
             this->animals = new animal*[number_of_animals];
             this->animals_index = 0;
             // animals[0] = new vegie("Daisy",100);
