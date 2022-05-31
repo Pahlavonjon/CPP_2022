@@ -14,8 +14,8 @@ int main(void){
     vegie* cow = new vegie("Cow",90);
     hunter* wolf = new hunter("Black wolf",80);
 
-    my_zoo.add_animal(wolf);
-    my_zoo.add_animal(cow);
+    // my_zoo.add_animal(wolf);
+    // my_zoo.add_animal(cow);
 
     animal** total_animals = my_zoo.get_animals();
     cout << "\n\n\n The animals in the zoo is \n\n\n\n";
@@ -49,6 +49,6 @@ int main(void){
     for (int k = 0; k < 2; k++){
         cout << " The name of the animal is: "<<total_animals[k]->get_name()<<" and the volume of this animal is: "<<total_animals[k]->get_volume()<<"\n\n";
     }
-    
+
     return 0;
 }

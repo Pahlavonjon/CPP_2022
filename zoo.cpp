@@ -10,8 +10,8 @@ using namespace std;
             }
             this->animals = new animal*[number_of_animals];
             this->animals_index = 0;
-            // animals[0] = new vegie("Daisy",100);
-            // animals[1] = new hunter("Clarence",50);
+            animals[0] = new vegie("Daisy",100);
+            animals[1] = new hunter("Clarence",50);
         }     
         bool zoo::add_animal(animal* this_animal){
             if (animals_index <= number_of_animals){
