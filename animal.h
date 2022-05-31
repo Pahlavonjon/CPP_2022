@@ -12,6 +12,7 @@ class animal{
        
         animal(string n, int v);
         virtual string get_name() = 0;
+        virtual void set_name(string new_name) = 0;
         int get_animalID();
         int get_volume();
         ~animal();

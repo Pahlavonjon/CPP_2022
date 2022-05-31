@@ -14,6 +14,7 @@ class hunter : public animal{
         int get_kills();
         void set_kills(int new_kills);
         string get_name();
+        void set_name(string new_name);
 
 };
 #endif

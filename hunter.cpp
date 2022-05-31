@@ -19,3 +19,6 @@ using namespace std;
             string new_name = "Hunter: "+this->name;
             return new_name;
         }
+        void hunter::set_name(string new_name){
+            this->name = new_name;
+        }

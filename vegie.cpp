@@ -13,6 +13,9 @@ using namespace std;
             string new_name = "Safe: "+this->name;
             return new_name;
         } 
+        string vegie::get_favourite_food(){
+            return this->favourite_food;
+        }
         void vegie::set_name(string new_name){
             this->name = new_name;
         }
