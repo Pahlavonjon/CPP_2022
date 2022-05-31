@@ -13,5 +13,6 @@ class vegie : public animal{
         string get_name();
         void set_name(string new_name);
         string get_favourite_food();
+        void set_favourite_food(string new_favourite);
 };
 #endif

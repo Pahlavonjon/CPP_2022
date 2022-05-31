@@ -19,3 +19,6 @@ using namespace std;
         void vegie::set_name(string new_name){
             this->name = new_name;
         }
+        void vegie::set_favourite_food(string new_favourite){
+            this->favourite_food = new_favourite;
+        }
