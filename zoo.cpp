@@ -4,6 +4,7 @@
 using namespace std;
 
         zoo::zoo(string n,int cows,int lions){
+            this->name = n;
             number_of_animals = abs(cows)+abs(lions);
                 this->animals = new animal*[number_of_animals];
                 this->animals_index = 0;
