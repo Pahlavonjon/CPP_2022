@@ -5,15 +5,13 @@ using namespace std;
 
         zoo::zoo(string n,int cows,int lions){
             number_of_animals = abs(cows)+abs(lions);
-            if (number_of_animals < 2){
-                number_of_animals = 3240;
-            }
-            else {
+           
                 this->animals = new animal*[number_of_animals];
                 this->animals_index = 0;
                 animals[0] = new vegie("Daisy",100);
                 animals[1] = new hunter("Clarence",50);
-            }
+                animals[2] = new hunter("testtt",9874);
+        
         }     
         // bool zoo::add_animal(animal* this_animal){
         //     if (animals_index <= number_of_animals){
