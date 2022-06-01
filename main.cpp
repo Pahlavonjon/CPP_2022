@@ -10,7 +10,7 @@
 using namespace std;
 
 int main(void){
-    zoo my_zoo("Adelaide Zoo",0,0);
+    zoo my_zoo("Adelaide Zoo",-1,-87);
     vegie* cow = new vegie("Cow",90);
     hunter* wolf = new hunter("Black wolf",80);
 

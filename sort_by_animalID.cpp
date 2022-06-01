@@ -7,10 +7,13 @@ using namespace std;
 
         sort_by_animalID::sort_by_animalID(){}
         void sort_by_animalID::sort(animal **animals,int n){
-            if (n < 2){
-                exit(0);
-            }
+            // if (n < 2){
+            //     exit(0);
+            // }
             for (int k = 0; k < n-1; k++){
+                if (animals[k+1] == NULL){
+                    exit(0);
+                }
                 if ((animals[k]->get_animalID()) > (animals[k+1]->get_animalID())){
                     animal* temporary_animal_bigger = (animals[k]);
                     animal* temporary_animal_smaller = (animals[k+1]);
