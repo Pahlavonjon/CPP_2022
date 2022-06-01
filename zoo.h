@@ -17,6 +17,6 @@ class zoo{
         string get_name();
         int get_number_of_animals();
         animal** get_animals();
-        bool add_animal(animal* this_animal);
+        // bool add_animal(animal* this_animal);
 };
 #endif

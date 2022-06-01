@@ -8,19 +8,21 @@ using namespace std;
             if (number_of_animals < 1){
                 number_of_animals = 1;
             }
-            this->animals = new animal*[number_of_animals];
-            this->animals_index = 0;
-            animals[0] = new vegie("Daisy",100);
-            animals[1] = new hunter("Clarence",50);
-        }     
-        bool zoo::add_animal(animal* this_animal){
-            if (animals_index <= number_of_animals){
-                animals[animals_index] = this_animal;
-                animals_index++;
-                return true;
+            else {
+                this->animals = new animal*[number_of_animals];
+                this->animals_index = 0;
+                animals[0] = new vegie("Daisy",100);
+                animals[1] = new hunter("Clarence",50);
             }
-            return false;
-        }
+        }     
+        // bool zoo::add_animal(animal* this_animal){
+        //     if (animals_index <= number_of_animals){
+        //         animals[animals_index] = this_animal;
+        //         animals_index++;
+        //         return true;
+        //     }
+        //     return false;
+        // }
         string zoo::get_name(){
             return this->name;
         }
