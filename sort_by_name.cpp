@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <cassert>
 #include "animal.h"
 #include "sort_by_name.h"
 using namespace std;
@@ -8,18 +9,16 @@ using namespace std;
         sort_by_name::sort_by_name(){}
    
         void sort_by_name::sort(animal **animals,int n){
-            // if (n < 2){
-            //     exit(0);
-            // }
             for (int k = 0; k < n-1; k++){
-                if (animals[k+1] == NULL){
-                    exit(0);
-                }
-                if (((animals[k]->get_name())) < ((animals[k+1]->get_name()))){
-                    animal* temporary_animal_bigger = (animals[k]);
-                    animal* temporary_animal_smaller = (animals[k+1]);
-                    animals[k+1] = temporary_animal_bigger;
-                    animals[k] = temporary_animal_smaller;
+                for (int j = 0; j < n-k-1; k++){
+                    // assert(animals[k] != nullptr);
+                    // assert(animals[k+1] != nullptr);
+                    if (((animals[j]->get_name())) > ((animals[j+1]->get_name()))){
+                        animal* temporary_animal_bigger = (animals[j]);
+                        animal* temporary_animal_smaller = (animals[j+1]);
+                        animals[j+1] = temporary_animal_bigger;
+                        animals[j] = temporary_animal_smaller;
+                    }
                 }
             }
         }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <cassert>
 #include "animal.h"
 #include "hunter.h"
 #include "vegie.h"
@@ -10,7 +11,7 @@
 using namespace std;
 
 int main(void){
-    zoo my_zoo("Adelaide Zoo",2,5);
+    zoo my_zoo("Adelaide Zoo",4,5);
     vegie* cow = new vegie("Cow",90);
     hunter* wolf = new hunter("Black wolf",80);
 
