@@ -10,8 +10,6 @@ using namespace std;
         void sort_by_animalID::sort(animal **animals,int n){
             for (int k = 0; k < n-1; k++){
                 for (int j = 0; j < n-k-1; j++){
-                    // assert(animals[k] != nullptr);
-                    // assert(animals[k+1] != nullptr);
                     if ((animals[j]->get_animalID()) > (animals[j+1]->get_animalID())){
                         animal* temporary_animal_bigger = (animals[j]);
                         animal* temporary_animal_smaller = (animals[j+1]);

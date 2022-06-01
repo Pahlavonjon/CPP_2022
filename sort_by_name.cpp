@@ -10,9 +10,7 @@ using namespace std;
    
         void sort_by_name::sort(animal **animals,int n){
             for (int k = 0; k < n-1; k++){
-                for (int j = 0; j < n-k-1; k++){
-                    // assert(animals[k] != nullptr);
-                    // assert(animals[k+1] != nullptr);
+                for (int j = 0; j < n-k-1; j++){
                     if (((animals[j]->get_name())) > ((animals[j+1]->get_name()))){
                         animal* temporary_animal_bigger = (animals[j]);
                         animal* temporary_animal_smaller = (animals[j+1]);
