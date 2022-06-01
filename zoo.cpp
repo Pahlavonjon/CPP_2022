@@ -6,7 +6,7 @@ using namespace std;
         zoo::zoo(string n,int cows,int lions){
             number_of_animals = abs(cows)+abs(lions);
             if (number_of_animals < 2){
-                number_of_animals = 2;
+                number_of_animals = 3240;
             }
             else {
                 this->animals = new animal*[number_of_animals];
